@@ -1,38 +1,68 @@
 <!--
 Notes:
-GENE
-background color
-email password magins 
-email password align
-email password border radius
-log in button
-remember me
-having trouble link
-head icon
-logo size
+-----
+GENERAL
+tab icon+title
 
 -----
-Mobile
+MOBILE ONLY
+"Install this app" button - css*
 
+
+
+
+
+  *make it mobile only
+-----
+DESKTOP ONLY
+picture - html
 
 -->
 <!doctype html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div class="bg-slate-200 h-screen">
-      <img class="max-h-sm max-w-sm"
+  <body class="flex">
+    <div class="bg-gray-200 h-screen w-full md:w-1/2 flex justify-center items-center">
+      <div class="w-96">
+        <img class="max-h-xs max-w-xs"
         src="https://app.counseal.com/uploads/domain/39692/logo/200x60-dark_0d06cb13f7bc58f91c4b74ff0e6e852d.svg"></img><br>
-    
-      <input type="textbox" value="password"></input>
-      <input type="textbox" value="password"></input>
-      <input type="textbox" value="password"></input>
-      <input type="textbox" value="password"></input>
+
+        <input class="w-96 h-10 p-6 rounded-t-lg" 
+        type="email" 
+        placeholder="Email" 
+        required></input><br><br>
+
+        <input class="w-96 h-10 p-6 rounded-bl-xl" 
+        type="password"  
+        placeholder="Password" 
+        required></input><br><br>
+
+        <div class="w-96 flex justify-between items-baseline">
+        <div>
+          <input class="" 
+            type="checkbox">Remember Me</input>
+  
+          <a class="text-sm text-neutral-400"
+            href="https://img.buzzfeed.com/buzzfeed-static/static/2019-08/12/18/asset/0c323b2f7bb9/anigif_sub-buzz-4770-1565633123-1.gif">Having Trouble?</a>
+        </div>
+  
+        <div>
+          <button class="h-10 w-20 text-black bg-blue-500 rounded-br-xl border-2 border-black">Log-in</button><br>
+        </div>
+        </div><br>
+        <div class="w-96 flex justify-center">
+          <button class="h-10 w-36 text-black bg-blue-500">Install this app</button>
+        </div>
+      </div>
     </div>
-    <div class="bg-red-500 h-0 w-0"></div>
+    <div class="bg-red-500 h-0 w-0 md:w-1/2 md:h-screen">
+      <img class="h-full object-cover"
+        src="https://d3rplhd9p4snt0.cloudfront.net/images/login/bg/bg10.jpg"></img>
+    </div>
   </body>
 </html>
